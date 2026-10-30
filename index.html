@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidelyn – From River to Sea: A Friendly Guide to Tides, Waves and Ocean Life</title>
+<meta name="description" content="Tidelyn is an independent guide that follows water from mountain streams and rivers to the open ocean, explaining tides, waves, currents, marine habitats and beach safety.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#03396c">
+<meta name="author" content="Tidelyn">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%2303396c'/%3E%3Cpath d='M6 22c5-6 9 6 14 0s9 6 14 0 6 3 8 1' fill='none' stroke='%2300b4d8' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M6 33c5-6 9 6 14 0s9 6 14 0 6 3 8 1' fill='none' stroke='%23ff7f6b' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tidelyn">
+<meta property="og:title" content="Tidelyn – From River to Sea">
+<meta property="og:description" content="Follow water from mountain streams to the open ocean and learn how tides, waves, currents and marine habitats work.">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--navy:#03396c;--ink:#0a2540;--aqua:#0096b7;--aquabg:#00b4d8;--coral:#e8573f;--coralbg:#ff7f6b;--foam:#f0fbff;--sand:#fdf3e1;--bg:#f8fcfe;--card:#fff;--txt:#2b4258;--mut:#56718a;--line:#d7eaf2}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--navy:#7cc7ee;--ink:#e6f4fb;--aqua:#3fd0ef;--coral:#ff8f7b;--foam:#0f2a3b;--sand:#1b2a31;--bg:#091c29;--card:#10293b;--txt:#cde2ee;--mut:#8fb0c4;--line:#1e415a}}
+:root[data-theme="dark"]{--navy:#7cc7ee;--ink:#e6f4fb;--aqua:#3fd0ef;--coral:#ff8f7b;--foam:#0f2a3b;--sand:#1b2a31;--bg:#091c29;--card:#10293b;--txt:#cde2ee;--mut:#8fb0c4;--line:#1e415a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--txt);line-height:1.75;font-size:17px}
+.wrap{width:100%;max-width:1500px;margin:0 auto;padding:0 clamp(18px,4vw,72px)}
+header{position:sticky;top:0;z-index:30;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:27px}
+.logo svg{width:42px;height:42px}
+.nav nav{display:flex;gap:18px;flex-wrap:wrap}
+.nav nav a{color:var(--mut);text-decoration:none;font-weight:600;font-size:15px}
+.nav nav a:hover{color:var(--coral)}
+.hero{position:relative;background:linear-gradient(160deg,#03396c 0%,#0077b6 55%,#00b4d8 100%);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:80px;padding-bottom:150px}
+.tag{display:inline-block;background:rgba(255,255,255,.18);padding:6px 16px;border-radius:30px;font-size:14px;font-weight:600;margin-bottom:18px}
+.hero h1{font-size:clamp(36px,5.2vw,64px);line-height:1.1;margin-bottom:20px;color:#fff}
+.hero h1 span{color:#ffd9a0}
+.hero p{font-size:19px;max-width:650px;margin-bottom:30px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;border-radius:40px;font-weight:700;text-decoration:none;font-size:16px}
+.b1{background:#ffd9a0;color:#3a2200}
+.b2{border:2px solid #fff;color:#fff}
+.facts{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.3);border-radius:24px;padding:28px}
+.facts h2{font-size:21px;color:#fff;margin-bottom:10px}
+.facts ul{list-style:none}
+.facts li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.22);font-size:16px}
+.facts li:last-child{border:0}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:100px;display:block}
+section{padding:78px 0}
+.alt{background:var(--foam)}
+.sandbg{background:var(--sand)}
+h2{font-size:clamp(28px,3.6vw,44px);color:var(--ink);line-height:1.2;margin-bottom:14px}
+.lead{max-width:900px;color:var(--mut);font-size:18px;margin-bottom:38px}
+.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+.jn{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 20px;text-align:center;position:relative}
+.jn .em{font-size:38px;display:block;margin-bottom:6px}
+.jn b{display:inline-block;background:var(--aquabg);color:#032a45;border-radius:20px;padding:2px 12px;font-size:13px;margin-bottom:8px}
+.jn h3{color:var(--ink);font-size:19px;margin-bottom:6px}
+.jn p{color:var(--mut);font-size:15px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 8px 22px rgba(3,57,108,.06)}
+.card .em{font-size:32px;display:block;margin-bottom:8px}
+.card h3{color:var(--ink);font-size:21px;margin-bottom:8px}
+.card p{color:var(--mut);font-size:16px}
+.card p+p{margin-top:10px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:start}
+.list{list-style:none}
+.list li{padding:14px 0 14px 38px;position:relative;border-bottom:1px dashed var(--line)}
+.list li:before{content:"〰";position:absolute;left:0;color:var(--aqua);font-weight:800}
+.list b{color:var(--ink)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:0 12px 28px rgba(3,57,108,.08)}
+.box h3{color:var(--ink);font-size:22px;margin-bottom:10px}
+.box ul{margin:10px 0 0 20px;color:var(--mut)}
+.box li{margin-bottom:7px}
+.depth{border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.zone{padding:22px 26px;color:#fff}
+.zone h3{font-size:19px;margin-bottom:2px}
+.zone p{font-size:15px;opacity:.95;line-height:1.55}
+.z1{background:#2bb3d6}.z2{background:#0b6fa0}.z3{background:#07456e}.z4{background:#041f3a}
+.tb{overflow-x:auto;border:1px solid var(--line);border-radius:16px}
+table{width:100%;border-collapse:collapse;background:var(--card);min-width:600px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:16px;vertical-align:top}
+th{background:var(--navy);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) th{color:#04223a}}
+td:first-child{font-weight:700;color:var(--ink)}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 24px;margin-bottom:14px;max-width:960px}
+.faq summary{cursor:pointer;font-weight:700;color:var(--ink);font-size:18px}
+.faq p{margin-top:10px;color:var(--mut)}
+.info p{max-width:940px;margin-bottom:14px}
+.info a{color:var(--aqua);font-weight:700}
+.note{background:var(--card);border-left:6px solid var(--coralbg);border-radius:12px;padding:18px 22px;max-width:940px;margin-top:20px;font-size:16px;color:var(--mut)}
+footer{background:#03223f;color:#a9c8dc;padding:52px 0 30px;font-size:15px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;margin-bottom:28px}
+footer h4{color:#fff;margin-bottom:10px;font-size:17px}
+footer a{display:block;color:#a9c8dc;text-decoration:none;padding:3px 0}
+footer a:hover{color:#fff}
+.copy{border-top:1px solid #174465;padding-top:20px;text-align:center;font-size:14px}
+@media(max-width:1000px){.journey{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.hero .wrap,.two,footer .cols{grid-template-columns:1fr}.hero .wrap{padding-top:48px;padding-bottom:110px}section{padding:54px 0}}
+@media(max-width:560px){.journey{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","name":"Tidelyn","description":"An independent guide that follows water from rivers to the open ocean.","inLanguage":"en"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What causes ocean tides?","acceptedAnswer":{"@type":"Answer","text":"Tides are caused mainly by the gravitational pull of the Moon, with a smaller effect from the Sun. As Earth rotates, coastlines pass through bulges of water, producing rising and falling sea levels."}},
+{"@type":"Question","name":"Why is seawater salty but river water is not?","acceptedAnswer":{"@type":"Answer","text":"Rivers carry tiny amounts of dissolved minerals from rocks and soil into the sea. When seawater evaporates, the salts stay behind, so over a very long time the ocean has become salty."}},
+{"@type":"Question","name":"What should I do if I am caught in a rip current?","acceptedAnswer":{"@type":"Answer","text":"Stay calm, do not fight the current, float or swim parallel to the shore until you are out of it, then swim back at an angle. Signal for help if you cannot get out."}},
+{"@type":"Question","name":"What is an estuary?","acceptedAnswer":{"@type":"Answer","text":"An estuary is the place where a river meets the sea and fresh water mixes with salt water. These areas are rich habitats for fish, birds and plants."}},
+{"@type":"Question","name":"Does Tidelyn sell tours or products?","acceptedAnswer":{"@type":"Answer","text":"No. Tidelyn is an information guide only. We do not sell tours, equipment or subscriptions."}}
+]}
+]}
+</script>
+</head>
+<body>
+<header role="banner">
+<div class="wrap nav">
+<a class="logo" href="#top" aria-label="Tidelyn home">
+<svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#03396c"/><path d="M6 22c5-6 9 6 14 0s9 6 14 0 6 3 8 1" fill="none" stroke="#00b4d8" stroke-width="4" stroke-linecap="round"/><path d="M6 33c5-6 9 6 14 0s9 6 14 0 6 3 8 1" fill="none" stroke="#ff7f6b" stroke-width="4" stroke-linecap="round"/></svg>
+<span>Tidelyn</span></a>
+<nav aria-label="Main navigation"><a href="#journey">River to Sea</a><a href="#tides">Tides</a><a href="#waves">Waves &amp; Currents</a><a href="#zones">Ocean Depths</a><a href="#habitats">Habitats</a><a href="#safety">Safety</a><a href="#faq">FAQ</a><a href="#about">About</a></nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap">
+<div>
+<span class="tag">Rivers, seas &amp; oceans explained</span>
+<h1>Every drop has a journey <span>from river to sea.</span></h1>
+<p>Welcome to Tidelyn, an independent guide that follows water from mountain streams to the open ocean. Learn how tides rise, how waves and currents move, who lives in the shallows and the deep, and how to enjoy the coast safely.</p>
+<div class="btns"><a class="btn b1" href="#journey">Follow the Water</a><a class="btn b2" href="#tides">Understand Tides</a></div>
+</div>
+<div class="facts">
+<h2>Ocean facts to start with</h2>
+<ul>
+<li>Oceans cover about 71% of Earth’s surface.</li>
+<li>Five oceans are commonly named: Pacific, Atlantic, Indian, Southern and Arctic.</li>
+<li>Seawater holds roughly 35 grams of salt in every litre.</li>
+<li>The deepest known point, in the Mariana Trench, is nearly 11 kilometres down.</li>
+</ul>
+</div>
+</div>
+<svg class="wave" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C240 110 480 0 720 50 S1200 100 1440 40 L1440 100 L0 100Z" fill="#f8fcfe"/></svg>
+</div>
+
+<section id="journey" aria-labelledby="h-journey">
+<div class="wrap">
+<h2 id="h-journey">The Journey From River to Sea</h2>
+<p class="lead">Water is always moving. Rain and snow gather in the hills, run downhill as streams, join rivers and finally reach the sea, where the sun lifts some of it back into the sky to start again. This loop is called the water cycle.</p>
+<div class="journey">
+<div class="jn"><span class="em">🏔️</span><b>Step 1</b><h3>Source</h3><p>Rain, snowmelt or springs feed small streams high in the hills.</p></div>
+<div class="jn"><span class="em">🏞️</span><b>Step 2</b><h3>River</h3><p>Streams join, widen and carry water, soil and nutrients downstream.</p></div>
+<div class="jn"><span class="em">🌾</span><b>Step 3</b><h3>Delta or estuary</h3><p>The river slows and spreads out, and fresh water begins to mix with salt water.</p></div>
+<div class="jn"><span class="em">🏖️</span><b>Step 4</b><h3>Coast</h3><p>Waves, tides and shifting sand shape beaches, cliffs and lagoons.</p></div>
+<div class="jn"><span class="em">🌊</span><b>Step 5</b><h3>Open ocean</h3><p>Water is warmed by the sun, evaporates, forms clouds and returns as rain.</p></div>
+</div>
+<p style="margin-top:28px;max-width:900px;color:var(--mut)">A real example is the Ganga, which begins in the Himalayas and flows across the plains to the Bay of Bengal, where the Sundarbans, one of the world’s largest mangrove forests, grow in its delta.</p>
+</div>
+</section>
+
+<section id="tides" class="alt" aria-labelledby="h-tides">
+<div class="wrap two">
+<div>
+<h2 id="h-tides">Why Do Tides Rise and Fall?</h2>
+<p class="lead" style="margin-bottom:16px">Tides are the regular rise and fall of sea level. They are caused mainly by the Moon’s gravity pulling on the ocean, with a smaller pull from the Sun.</p>
+<ul class="list">
+<li><b>Two highs, two lows.</b> Most coasts see about two high tides and two low tides in a little over a day, though the pattern varies by place.</li>
+<li><b>The Moon leads.</b> Because the Moon rises later each day, tide times shift by roughly 50 minutes daily.</li>
+<li><b>Local shape matters.</b> Narrow bays and river mouths can make tides much larger than on open coasts.</li>
+<li><b>Tides reach rivers.</b> In many estuaries, the incoming tide pushes salt water upstream and can slow or even reverse the river’s flow for a while.</li>
+</ul>
+</div>
+<div class="box">
+<h3>Spring tides and neap tides</h3>
+<p>“Spring” here has nothing to do with the season. It means the tide “springs up” strongly.</p>
+<br>
+<ul>
+<li><b>Spring tides</b> happen around the new and full Moon, when the Sun, Moon and Earth line up. High tides are higher and low tides are lower.</li>
+<li><b>Neap tides</b> happen around the quarter Moons, when the Sun and Moon pull at right angles. The difference between high and low is smaller.</li>
+</ul>
+<br>
+<p>Always check a local tide table before walking on tidal flats or sandbars, since the water can return faster than you expect.</p>
+</div>
+</div>
+</section>
+
+<section id="waves" aria-labelledby="h-waves">
+<div class="wrap">
+<h2 id="h-waves">Waves and Currents</h2>
+<p class="lead">Two different kinds of movement shape the sea. Waves move the surface, while currents move large bodies of water over long distances.</p>
+<div class="grid">
+<div class="card"><span class="em">🌬️</span><h3>Wind waves</h3><p>Most waves are made by wind blowing across the water. The stronger the wind, the longer it blows and the wider the stretch of open water, the bigger the waves can grow.</p></div>
+<div class="card"><span class="em">🌀</span><h3>Ocean currents</h3><p>Currents are driven by wind, Earth’s rotation, temperature and saltiness. Warm and cold currents help spread heat around the planet and influence regional climate.</p></div>
+<div class="card"><span class="em">🌧️</span><h3>Monsoon currents</h3><p>In the northern Indian Ocean, surface currents change direction with the seasons because the monsoon winds reverse, which has shaped sea travel and fishing for centuries.</p></div>
+<div class="card"><span class="em">⚠️</span><h3>Tsunamis</h3><p>A tsunami is a very long wave, usually caused by an undersea earthquake or landslide. It is different from a normal wave and is not caused by wind or tides.</p></div>
+</div>
+</div>
+</section>
+
+<section id="zones" class="sandbg" aria-labelledby="h-zones">
+<div class="wrap two">
+<div>
+<h2 id="h-zones">Layers of the Ocean</h2>
+<p class="lead" style="margin-bottom:16px">As you go deeper, sunlight fades, water gets colder and pressure rises. Scientists often describe the ocean in layers based on how much light reaches them.</p>
+<ul class="list">
+<li><b>Light fades quickly.</b> Most sunlight is absorbed within the first couple of hundred metres.</li>
+<li><b>Pressure increases with depth.</b> Deep-sea animals have special body features to cope with it.</li>
+<li><b>Some animals make their own light.</b> This glow is called bioluminescence and is common in the deep sea.</li>
+<li><b>Much is still unexplored.</b> Large parts of the deep ocean floor have never been seen directly.</li>
+</ul>
+</div>
+<div class="depth" role="img" aria-label="Diagram of four ocean layers from sunlit surface to the deep trenches">
+<div class="zone z1"><h3>Sunlit zone · surface to about 200 m</h3><p>Plenty of light. Most marine plants, algae, coral reefs and many fish live here.</p></div>
+<div class="zone z2"><h3>Twilight zone · about 200 to 1,000 m</h3><p>Faint light only. Many animals travel up at night to feed and return by day.</p></div>
+<div class="zone z3"><h3>Midnight zone · about 1,000 to 4,000 m</h3><p>No sunlight and near-freezing water. Life here relies on food that sinks from above.</p></div>
+<div class="zone z4"><h3>Abyss and trenches · deeper than about 4,000 m</h3><p>Dark, cold and under immense pressure, yet still home to specially adapted creatures.</p></div>
+</div>
+</div>
+</section>
+
+<section id="habitats" aria-labelledby="h-hab">
+<div class="wrap">
+<h2 id="h-hab">Habitats Where Water Meets Life</h2>
+<p class="lead">From muddy river mouths to colourful reefs, each coastal habitat has its own plants, animals and role in keeping the shore healthy.</p>
+<div class="grid">
+<div class="card"><span class="em">🌿</span><h3>Estuaries and wetlands</h3><p>Where rivers meet the sea, mixed fresh and salt water create nutrient-rich shallows. They serve as nurseries for many fish and feeding grounds for migrating birds.</p></div>
+<div class="card"><span class="em">🌳</span><h3>Mangrove forests</h3><p>Mangroves grow in salty, tidal mud. Their tangled roots hold soil in place, soften wave energy and shelter young fish and crabs.</p></div>
+<div class="card"><span class="em">🪸</span><h3>Coral reefs</h3><p>Reefs cover only a small fraction of the seafloor, yet roughly a quarter of known marine species depend on them at some stage of life. Corals are sensitive to warming water and pollution.</p></div>
+<div class="card"><span class="em">🏝️</span><h3>Beaches and dunes</h3><p>Sandy shores and dunes absorb storm energy and are nesting sites for turtles and shorebirds. Staying off dunes helps them survive.</p></div>
+<div class="card"><span class="em">🌱</span><h3>Seagrass meadows</h3><p>Underwater grass beds feed grazing animals, shelter small creatures and help keep sediment steady.</p></div>
+<div class="card"><span class="em">🐋</span><h3>Open ocean</h3><p>Tiny drifting plants and algae at the surface form the base of the food web, and they produce a large share of the oxygen we breathe.</p></div>
+</div>
+</div>
+</section>
+
+<section id="safety" class="alt" aria-labelledby="h-safety">
+<div class="wrap two">
+<div class="box">
+<h3>Beach and water safety basics</h3>
+<ul>
+<li>Swim only in areas marked as safe, ideally where lifeguards are on duty.</li>
+<li>Read warning flags and signs, and ask staff about local hazards.</li>
+<li>Check tide times before walking on sandbars, rocks or mudflats.</li>
+<li>Never swim alone, and keep children within arm’s reach.</li>
+<li>Avoid swimming after heavy rain when river runoff can cloud water.</li>
+<li>Wear a life jacket on boats, and avoid alcohol around water.</li>
+<li>Use sun protection, drink water and take shade breaks.</li>
+</ul>
+</div>
+<div>
+<h2 id="h-safety">If You Are Caught in a Rip Current</h2>
+<p class="lead" style="margin-bottom:16px">A rip current is a narrow, fast channel of water flowing away from the shore. It does not pull you under, but it can tire a swimmer who fights it.</p>
+<ul class="list">
+<li><b>Stay calm.</b> Panic wastes energy. Float if you need to rest.</li>
+<li><b>Do not swim straight back.</b> Trying to go directly against the current is exhausting.</li>
+<li><b>Swim or float parallel to the shore</b> until you feel the pull weaken, then angle back to the beach.</li>
+<li><b>Signal for help.</b> Wave and call out, or ask a lifeguard to assist.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="care" aria-labelledby="h-care">
+<div class="wrap two">
+<div>
+<h2 id="h-care">Small Habits That Help Water Stay Healthy</h2>
+<p class="lead" style="margin-bottom:16px">Rivers and seas are connected, so what happens upstream eventually reaches the coast. Simple everyday choices make a difference.</p>
+<ul class="list">
+<li><b>Bin your litter.</b> Plastic left on the ground or riverbank can end up in the sea.</li>
+<li><b>Use less single-use plastic.</b> Carry a reusable bottle and bag.</li>
+<li><b>Keep chemicals out of drains.</b> Paints, oils and strong cleaners should be disposed of properly.</li>
+<li><b>Respect wildlife.</b> Keep a distance from nesting birds, turtles and reefs, and never take shells or corals from protected areas.</li>
+<li><b>Join a local clean-up.</b> Many community groups organise riverbank and beach clean-ups.</li>
+</ul>
+</div>
+<div class="box">
+<h3>Quick glossary</h3>
+<ul>
+<li><b>Estuary:</b> where a river meets the sea.</li>
+<li><b>Delta:</b> low land formed where a river drops sediment at its mouth.</li>
+<li><b>Tide:</b> regular rise and fall of sea level.</li>
+<li><b>Salinity:</b> how much salt is dissolved in water.</li>
+<li><b>Current:</b> a steady flow of water in the ocean.</li>
+<li><b>Plankton:</b> tiny drifting organisms at the base of the food web.</li>
+<li><b>Bioluminescence:</b> light produced by living creatures.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="faq" class="alt faq" aria-labelledby="h-faq">
+<div class="wrap">
+<h2 id="h-faq">Quick Answers</h2>
+<p class="lead">Short answers to questions readers ask most.</p>
+<details open><summary>What causes ocean tides?</summary><p>Tides are caused mainly by the gravitational pull of the Moon, with a smaller effect from the Sun. As Earth rotates, coastlines pass through bulges of water, producing rising and falling sea levels.</p></details>
+<details><summary>Why is seawater salty but river water is not?</summary><p>Rivers carry tiny amounts of dissolved minerals from rocks and soil into the sea. When seawater evaporates, the salts stay behind, so over a very long time the ocean has become salty.</p></details>
+<details><summary>What should I do if I am caught in a rip current?</summary><p>Stay calm, do not fight the current, float or swim parallel to the shore until you are out of it, then swim back at an angle. Signal for help if you cannot get out.</p></details>
+<details><summary>What is an estuary?</summary><p>An estuary is the place where a river meets the sea and fresh water mixes with salt water. These areas are rich habitats for fish, birds and plants.</p></details>
+<details><summary>Does Tidelyn sell tours or products?</summary><p>No. Tidelyn is an information guide only. We do not sell tours, equipment or subscriptions.</p></details>
+</div>
+</section>
+
+<section id="about" class="info" aria-labelledby="h-about">
+<div class="wrap">
+<h2 id="h-about">About Tidelyn</h2>
+<p>Tidelyn is an independent information website that explains rivers, seas and oceans in plain language. Our goal is to help curious readers understand how water moves, who depends on it and how to enjoy it safely.</p>
+<p>We do not sell products, tours or subscriptions, we do not ask you to create an account, and we do not collect personal information through this page.</p>
+</div>
+</section>
+
+<section id="contact" class="sandbg info" aria-labelledby="h-contact">
+<div class="wrap">
+<h2 id="h-contact">Contact</h2>
+<p>Questions, corrections or suggestions are welcome. Write to us at <a href="mailto:contact@your-domain.com">contact@your-domain.com</a>. We aim to reply within a few working days.</p>
+</div>
+</section>
+
+<section id="disclaimer" class="info" aria-labelledby="h-disc">
+<div class="wrap">
+<h2 id="h-disc">Disclaimer</h2>
+<p>The content on Tidelyn is provided for general information and educational purposes only. We make reasonable efforts to keep it accurate, but figures, tide times, conditions and hazards differ by location and change over time. Always check local tide tables, weather forecasts, warning flags and official notices before going near rivers, beaches or the sea.</p>
+<p>Tidelyn is not a substitute for professional, medical, safety or emergency advice. Water activities carry real risks. You are responsible for your own safety, for choosing permitted and supervised locations, and for supervising children. In an emergency, contact your local emergency services. Tidelyn is not responsible for any loss, injury or damage arising from use of this information.</p>
+<div class="note">Descriptions of habitats, wildlife and places are general summaries. Rules about protected areas and wildlife vary by region, so follow local regulations.</div>
+</div>
+</section>
+</main>
+
+<footer role="contentinfo">
+<div class="wrap">
+<div class="cols">
+<div><h4>About Tidelyn</h4><p>An independent, easy-to-read guide to rivers, seas and oceans. Written for curious readers of every age.</p></div>
+<div><h4>Explore</h4><a href="#journey">River to Sea</a><a href="#tides">Tides</a><a href="#waves">Waves &amp; Currents</a><a href="#habitats">Habitats</a><a href="#faq">FAQ</a></div>
+<div><h4>Information</h4><a href="#about">About</a><a href="#contact">Contact</a><a href="#disclaimer">Disclaimer</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a></div>
+</div>
+<div class="copy">© 2026 Tidelyn. All rights reserved. Content is for general information only.</div>
+</div>
+</footer>
+</body>
+</html>
